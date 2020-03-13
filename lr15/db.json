@@ -1,0 +1,31 @@
+{
+  "persons": [
+    {
+      "firstname": "СВрпр",
+      "lastname": "thththdvkm,",
+      "phone": "9999999999",
+      "id": 1
+    },
+    {
+      "firstname": "Sasha",
+      "lastname": "Fedorov",
+      "phone": "8(909) 000-0000",
+      "id": 2
+    },
+    {
+      "firstname": "ererwh",
+      "lastname": "3545trgef",
+      "phone": "9999999999",
+      "id": 6
+    },
+    {
+      "firstname": "kldvklfv",
+      "lastname": "dsv",
+      "phone": "0999999999",
+      "id": 7
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

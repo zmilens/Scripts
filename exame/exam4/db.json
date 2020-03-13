@@ -1,0 +1,52 @@
+{
+  "mothers": [
+    {
+      "name": "w efв e wfef",
+      "price": 543,
+      "article": "123124",
+      "chipset": "Intel",
+      "formfactor": "ATX",
+      "id": 3
+    },
+    {
+      "name": "sad а а fe",
+      "price": 1763,
+      "article": "123124",
+      "chipset": "Intel",
+      "formfactor": "ATX43r",
+      "id": 4
+    },
+    {
+      "name": "45 вы ыв lk",
+      "price": 54,
+      "article": "53",
+      "chipset": "23e",
+      "formfactor": "xr",
+      "id": 8
+    },
+    {
+      "name": "ef ы ывм qwd",
+      "price": 12,
+      "article": "432",
+      "chipset": "13",
+      "formfactor": "253",
+      "id": 9
+    },
+    {
+      "name": "e ыв ыв w",
+      "price": 23,
+      "article": 11,
+      "chipset": "ew",
+      "formfactor": "hjf",
+      "id": 10
+    },
+    {
+      "name": "sac ыв вы ac",
+      "price": 112,
+      "article": 23,
+      "chipset": "scasc",
+      "formfactor": "acs",
+      "id": 11
+    }
+  ]
+}

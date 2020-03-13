@@ -1,0 +1,28 @@
+
+<div class="container">
+    <div class="d-flex flex-row">
+        <div class="row m-2">
+            <div class="m-4">{{inPerson.id}}</div>
+            <div class="m-4">{{inPerson.firstname}}</div>
+            <div class="m-4">{{inPerson.lastname}}</div>   
+        </div>
+        <div class=" m-4">
+            <button class="btn btn-secondary" (click)="onDeletePerson()"> Удалить</button>
+        </div>
+        <div class=" m-4">
+            <button class="btn btn-primary" (click)="editSwitch()">Редактировать</button>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column m-2" *ngIf="edit">
+        <div class="col-4 m-1">
+          <input type="text" class="form-control" placeholder="Имя" value="{{inPerson.firstname}}" #inputFirstname>
+        </div>
+        <div class="col-4 m-1">
+          <input type="text" class="form-control" placeholder="фамилия" value="{{inPerson.lastname}}" #inputLastname>
+        </div>
+        <div class="col-4 m-1">
+          <button class="btn btn-primary"
+          (click)="onEditPerson(inputFirstname.value, inputLastname.value)">Сохранить</button>
+        </div>
+    </div>

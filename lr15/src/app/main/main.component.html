@@ -1,0 +1,22 @@
+<div class="container">
+  <h3>Фильтры</h3>
+  <div class="d-flex flex-column m-4 w-50">
+    <div class="m-4">
+      <button class="btn btn-secondary btn-block" (click)="searchByFN()">Имя</button>
+    </div>
+    <div class="m-4">
+      <input type="text" [(ngModel)]="srchFN" class="form-control" *ngIf="fnFilter">
+    </div>
+    <div class="m-4">
+      <button class="btn btn-secondary btn-block" (click)="searchByLN()">Фамилия</button>
+    </div>
+    <div class="m-4">
+      <input type="text" [(ngModel)]="srchLN" class="form-control" *ngIf="lnFilter">
+    </div>
+  </div>
+
+  <app-person-view (delPerson)="personService.onDeletePerson($event)"
+                   [inPerson]="person"
+                   *ngFor="let person of personService.persons | appFirstNameFilter:srchFN | appLastNameFilter:srchLN">
+  </app-person-view>
+</div>

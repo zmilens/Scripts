@@ -1,0 +1,8 @@
+<div *ngIf="note">
+    <form [formGroup]="editForm" (ngSubmit)="edit()" action="">
+        <input type="date" name="dataEnd" formControlName="dataEnd">
+        <textarea formControlName="content"></textarea>
+        <button type="submit">Редактировать</button>
+    </form>
+
+</div>

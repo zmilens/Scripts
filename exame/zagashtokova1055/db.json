@@ -1,0 +1,70 @@
+{
+  "students": [
+    {
+      "surname": "загаштокова",
+      "name": "wfefc",
+      "middlename": "sad",
+      "number": "89990000000",
+      "email": "rbgrt@mail.ru",
+      "data": "11111111",
+      "group": "",
+      "direction": "",
+      "id": 5
+    },
+    {
+      "surname": "ads",
+      "name": "dasd",
+      "middlename": "sss",
+      "number": 11,
+      "email": "sda",
+      "data": "dd",
+      "group": "dsa",
+      "direction": "ds",
+      "id": 6
+    },
+    {
+      "surname": "dw",
+      "name": "a",
+      "middlename": "das",
+      "number": 12,
+      "email": "asd",
+      "data": "as",
+      "group": "ad",
+      "direction": "sa",
+      "id": 8
+    },
+    {
+      "surname": "d",
+      "name": "ad",
+      "middlename": "sf",
+      "number": 11,
+      "email": "d",
+      "data": "sd",
+      "group": "ad",
+      "direction": "da",
+      "id": 9
+    },
+    {
+      "surname": "Загаштокова",
+      "name": "Милена",
+      "middlename": "Альбертовна",
+      "number": 89099828870,
+      "email": "milw@mai.ru",
+      "data": "10.11.2000",
+      "group": "181321",
+      "direction": "web",
+      "id": 10
+    },
+    {
+      "surname": "ффв",
+      "name": "ывфф",
+      "middlename": "ыф",
+      "number": "1111111111",
+      "email": "csa@mail.ru",
+      "data": "11111111",
+      "group": "111111",
+      "direction": "fee",
+      "id": 11
+    }
+  ]
+}

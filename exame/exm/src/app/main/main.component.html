@@ -1,0 +1,19 @@
+<div class="form-group">
+    <label for="exampleFormControlSelect2">Сортировка</label>
+    <select  class="form-control"  id="exampleFormControlSelect2" [(ngModel)]="sortParam"> 
+    <option selected > Сортировка</option>
+    <option value="dataAdd">По дате создания</option>
+    <option value="dataEnd">По дате окончания</option>
+    </select>
+</div>
+<div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Фильтрация</span>
+    </div>
+    <input type="text" class="form-control" [(ngModel)]="filterParam">
+</div>
+
+<div *ngFor="let note of notes | sort : sortParam : filterParam">  <!-- директива формирует и изменяет структуру DOM  -->
+    <p class="ml-4">{{note.dataAdd}} {{note.content }}  <span [style.color]="dateValid(note.dataEnd)? 'red' : 'green'"> {{note.dataEnd}} </span>  <!-- отображает значение свойства -->
+         <button class="btn btn-warning" (click)="onDelete(note.id)">Удалить</button> <a class="btn btn-secondary ml-2" [routerLink]="['edit', note.id]">Редактировать</a> </p>
+</div>

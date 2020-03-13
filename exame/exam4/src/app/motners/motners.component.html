@@ -1,0 +1,42 @@
+
+<div class="input-group input-group-sm m-5">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Фильтрация</span>
+  </div>
+  <input type="text" class="form-control" [(ngModel)]="filterM">
+</div>
+
+<div class="form-group m-5">
+  <label for="exampleFormControlSelect2">Сортировка</label>
+  <select  class="form-control"  id="exampleFormControlSelect2" [(ngModel)]="sortM"> 
+  <option value="id">По id </option>
+  <option value="price">По возрастанию цены</option>
+  <option value="price2">По убыванию цены</option>
+
+  </select>
+</div>
+
+<table class="table table-bordered m-5 bg-light mr-5">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Название</th>
+        <th scope="col">Цена</th>
+        <th scope="col">Артикул</th>
+        <th scope="col">Чипсет</th>
+        <th scope="col">Форм-фактор</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let mother of mothers | sort : filterM : sortM ">
+        <th scope="row" >{{mother.id}}</th>
+        <td>{{mother.name}}</td>
+        <td>{{mother.price}}</td>
+        <td>{{mother.article}}</td>
+        <td>{{mother.chipset}}</td>
+        <td>{{mother.formfactor}}</td>
+        <td> <a class="btn btn-secondary ml-2" [routerLink]="['/edit-m', mother.id]">Редактировать</a> </td>     
+       </tr>
+    </tbody>
+  </table>
+  <a class="btn btn-outline-secondary m-5" [routerLink]="'/add-m'">Добавить</a>

@@ -1,0 +1,29 @@
+<div *ngIf="mother">
+    <form class="m-5 w-50" [formGroup]="editmotherForm" (ngSubmit)="edit()" action=""> 
+        <!-- отправка форм и событий -->
+        <div class="form-group">
+        <label>Название</label>
+        <input type="text" name="name" class="form-control" formControlName="name">
+        </div>
+        <div class="form-group">
+        <label >Цена</label>
+        <input type="text" name="price" class="form-control" formControlName="price">
+        </div>
+        <div class="form-group">
+            <label >Артикул</label>
+            <input type="text" name="article" class="form-control" formControlName="article">
+        </div>
+        <div class="form-group">
+            <label >Чипсет</label>
+            <input type="text" name="chipset" class="form-control" formControlName="chipset">
+        </div>
+        <div class="form-group">
+            <label >Форм-фактор</label>
+            <input type="formfactor" formControlName="formfactor" class="form-control">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-secondary"> Редактировать</button>
+            <button (click)="onDelete()" class="btn btn-secondary ml-3"> Удалить</button>
+        </div>
+    </form>
+</div>

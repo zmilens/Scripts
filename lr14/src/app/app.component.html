@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <h2>{{title}}</h2>
+  </div>
+  <h4>Фильтры</h4>
+<div class="d-flex flex-row">
+  <div class=" mb-1">
+    <div class="m-4">
+      <button class="btn btn-secondary btn-block" (click)="searchFirstName()">Имя</button>
+    </div>
+    <div class="m-4">
+      <input type="text" [(ngModel)]="searchFirst" class="form-control" *ngIf="firstnameFilter">
+    </div>
+    <div class="m-4">
+      <button class="btn btn-secondary btn-block" (click)="searchLastName()">Фамилия</button>
+    </div>
+    <div class="m-4">
+      <input type="text" [(ngModel)]="searchLast" class="form-control" *ngIf="lastnameFilter">
+    </div>
+  </div>
+</div>
+<!-- <app-first></app-first>
+<app-second></app-second> -->
+<app-person-view (delPerson)="onDeletePerson($event)"
+                 (editPerson)="onEditPerson($event)"
+                 [inPerson]="person"
+                 *ngFor="let person of persons | firstnamePipe:searchFirst | lastnamePipe:searchLast">
+</app-person-view>
+<hr>
+<app-person-add (addperson)="onAddPerson($event)"></app-person-add>

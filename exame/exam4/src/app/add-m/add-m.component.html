@@ -1,0 +1,25 @@
+<form class="m-5 w-50" [formGroup]="motherForm" (ngSubmit)="add()" action="">
+    <div class="form-group">
+      <label>Название</label>
+      <input type="text" name="name" class="form-control" formControlName="name">
+    </div>
+    <div class="form-group">
+      <label >Цена</label>
+      <input type="number" name="price" class="form-control" formControlName="price">
+    </div>
+    <div class="form-group">
+        <label >Артикул</label>
+        <input type="number" name="article" class="form-control" formControlName="article">
+    </div>
+    <div class="form-group">
+        <label >Чипсет</label>
+        <input type="text" name="chipset" class="form-control" formControlName="chipset">
+    </div>
+    <div class="form-group">
+        <label >Форм-фактор</label>
+        <input type="formfactor" formControlName="formfactor" class="form-control">
+    </div>
+
+    <button [disabled]="motherForm.invalid" type="submit" class="btn btn-secondary">Добавить</button>
+    <p *ngIf="motherForm.invalid"> Заполни все </p>
+</form>

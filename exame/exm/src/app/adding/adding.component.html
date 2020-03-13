@@ -1,0 +1,10 @@
+<form [formGroup]="noteForm" (ngSubmit)="add()" action="">
+    <input type="date" name="dataEnd" formControlName="dataEnd">
+    <textarea formControlName="content"></textarea>
+    <div *ngIf="noteForm.controls['content'].invalid">
+        Заполните это поле
+    </div>
+    <button [disabled]="noteForm.invalid" type="submit">Добавить</button>
+    <p *ngIf="noteForm.invalid"> Сука, заполни все </p>
+
+</form>
